@@ -16,7 +16,7 @@ struct DetailView: View {
         Image(uiImage: UIImage(named: selectedImage)!)
             .resizable()
             .aspectRatio(1024/768, contentMode: .fit)
-            .onTapGesture(count: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/, perform: {
+            .onTapGesture(count: 1, perform: {
                 hideNavigationBar.toggle()
             })
             .navigationBarTitle(selectedImage, displayMode: .inline)
